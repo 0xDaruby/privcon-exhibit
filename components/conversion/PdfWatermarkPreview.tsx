@@ -222,7 +222,7 @@ export function PdfWatermarkPreview({ file, options, image, pages, pageError, on
   if (!pdf) return <section ref={previewRef} tabIndex={-1} className="watermark-preview watermark-preview-loading" aria-label="PDF preview" role="status"><p>Preparing your page previews locally…</p></section>;
 
   return <section ref={previewRef} tabIndex={-1} className="watermark-preview" aria-label="PDF page previews">
-    <div className="watermark-preview-heading"><h2>{pdf.numPages} {pdf.numPages === 1 ? "page" : "pages"}</h2><p>Placement preview · original PDF quality is kept on export</p></div>
+    <div className="watermark-preview-heading"><h2>{pdf.numPages} {pdf.numPages === 1 ? "page" : "pages"}</h2><p>Placement preview · export is simulated</p></div>
     {currentImage?.error && options.kind === "image" ? <p role="alert" className="watermark-preview-error">{currentImage.error}</p> : null}
     <div className="watermark-thumbnail-grid">
       {pageWindow.pages.map((number) => {
