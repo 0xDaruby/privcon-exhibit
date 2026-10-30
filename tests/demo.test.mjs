@@ -66,4 +66,5 @@ test("deployment policy blocks external connections, forms and frames", async ()
   assert.match(policy, /form-action 'none';/);
   assert.match(policy, /frame-ancestors 'none'/);
   assert.equal(config.outputDirectory, "out");
+  assert.equal(config.framework, null);
 });

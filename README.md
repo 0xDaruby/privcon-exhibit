@@ -32,7 +32,7 @@ npm run build
 
 ## Deploy on Vercel
 
-Import this repository into Vercel with the repository root as the project root. The configuration builds and serves a static frontend. No API URL, credentials, conversion backend, or document storage is required.
+Import this repository into Vercel with the repository root as the project root. The configuration selects the **Other** preset, runs the Next.js static export, and serves `out/`. No API URL, credentials, conversion backend, or document storage is required.
 
 Deployments are snapshots of this repository. To update from the main app, copy and review the intended frontend changes, retain this repository's demo adapter and privacy restrictions, and run the checks above before deploying.
 
