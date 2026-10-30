@@ -1,0 +1,25 @@
+.demo-notice {
+  padding: 12px clamp(20px, 4vw, 64px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 24px;
+  border-bottom: 1px solid var(--pc-border-default);
+  background: var(--pc-bg-subtle);
+  font-size: 12px;
+  line-height: 20px;
+}
+.demo-notice p { margin: 0; display: flex; flex-wrap: wrap; gap: 4px 12px; }
+.demo-notice strong { color: var(--pc-fg-primary); white-space: nowrap; }
+.demo-notice span { color: var(--pc-fg-secondary); }
+.demo-notice > div { display: flex; gap: 20px; flex-shrink: 0; }
+.demo-notice a { color: var(--pc-fg-primary); text-underline-offset: 4px; }
+.demo-notice a:focus-visible, .demo-sample-button:focus-visible { outline: 2px solid var(--pc-focus); outline-offset: 4px; }
+.demo-sample-intro { margin: 0 0 20px; padding: 20px; border: 1px solid var(--pc-border-default); border-radius: var(--pc-radius-md); display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.demo-sample-intro p { margin: 0; color: var(--pc-fg-secondary); font-size: 14px; line-height: 22px; }
+.demo-sample-button { min-height: 44px; padding: 10px 18px; border: 1px solid var(--pc-border-strong); border-radius: var(--pc-radius-sm); color: var(--pc-fg-primary); background: var(--pc-bg-surface); cursor: pointer; font-size: 14px; font-weight: 600; white-space: nowrap; }
+.demo-sample-button:hover { background: var(--pc-bg-selected); }
+@media (max-width: 760px) {
+  .demo-notice { align-items: flex-start; flex-direction: column; }
+  .demo-sample-intro { align-items: stretch; flex-direction: column; }
+}
